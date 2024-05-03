@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="mailto:giselladieguez2@gmail.com?subject=Ex3" method="post" enctype="text/plain">
+        <div>
+            <label for="nameId">Nombre </label>
+            <input type="text" name="name" id="nameId">
+        </div>
+        <div>
+            <label for="lastnameId">Apellido </label>
+            <input type="text" name="lastname" id="lastnameId">
+        </div>
+        <div>
+            <label for="dateId">Fecha de nacimiento </label>
+            <input type="date" name="date" id="dateId">
+        </div>
+        <div>
+            <label for="emailId">Email </label>
+            <input type="email" name="email" id="emailId">
+        </div>
+        <div>
+            <label for="sexId">Sexo </label>
+            <select id="sexId" name="sexId">
+                <option value="female">F</option>
+                <option value="male">M</option>
+            </select>
+        </div>
+        <div>
+            <label id="nightTurn">Turno noche</label>
+            <input type="radio" id="nightTurn" name="turn" value="Noche">
+            <label id="morningTurn">Turno mañana</label>
+            <input type="radio" id="morningTurn" name="turn" value="Mañana">
+        </div>
+        <div>
+            <textarea id="messageId" name="message" cols="30" rows="10" placeholder="Comentarios"></textarea>
+        </div>
+        <div>
+            <label for="termsId">Acepto términos y condiciones </label>
+            <input type="checkbox" name="terms" id="termsId" required>
+        </div>
+        <div>
+            <input type="submit" id="submitId">
+            <input type="reset" id="resetId">
+            <a href="./index.html"><button id="cancelar">Cancelar</button></a>
+        </div>
+    </form>
+</body>
+</html>
