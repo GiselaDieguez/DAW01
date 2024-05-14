@@ -20,12 +20,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
-    -webkit-box-pack: justify;
 }
 
 .logoRosario3{
     flex-basis: 175px;
+    margin-right: 10px; 
     -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-right: 10px;
@@ -40,18 +39,17 @@ body {
     overflow: hidden;
     font-weight: 800;
     margin-right: 29px;
+    width: 165vh;
 }
 
 .hrRight {
     position: relative;
-    left: 50%;
-    transform: translateX(50%);
 }
 
 .rightSearch {
     position: relative;
-    left: 48%;
-    transform: translateX(46%);
+    display: flex;
+    align-items: center;
 }
 
 .logoSearch{
@@ -196,4 +194,113 @@ article{
 
 a{
     text-decoration: none;
+}
+
+  @media screen and (min-width: 1024px) and (max-width: 1280px){ 
+    aside{
+        display: none;
+      }
+  }
+
+  @media screen and (min-width: 800px) and (max-width: 1024px){ 
+    aside{
+      display: none;
+    }
+    .navBarTitle{
+      font-size: 13px;
+    }
+    .articleContainer{
+      padding-right: 0px;
+    }
+    .img1{
+      max-width: 650px;
+      height: auto;
+    }
+
+    .logoRosario3{
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+      }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 800px){ 
+    aside{
+      display: none;
+    }
+    .navBarTitle{
+      display: none;
+    }
+    .logoSearch{
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+    }
+    .navBar{
+      width: 100%;
+      justify-content: space-between;
+    }
+    .logoSearch{
+      display: none;
+    }
+    .navBarTitle{
+      font-size: 10px;
+    }
+    .articleContainer{
+      padding-right: 0px;
+    }
+    .articleTitle{
+      width: 100%;
+      font-size: 40px;
+      line-height: 50px;
+      word-wrap: break-word;
+    }
+    .img1{
+      max-width: 450px;
+      height: auto;
+    }
+    .logoRosario3{
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+      }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 481px){ 
+    aside{
+      display: none;
+    }
+    .navBarTitle{
+      display: none;
+    }
+    .logoSearch{
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+    }
+    .navbarContainer{
+      width: 100%;
+      justify-content: space-between;
+    }
+    .logoSearch{
+      display: none;
+    }
+    .notaTitulo{
+      width: 100%;
+      font-size: 30px;
+      line-height: 40px;
+      word-wrap: break-word;
+    }
+    .img1{
+      max-width: 350px;
+      height: auto;
+    }
+    .articleContainer{
+      padding-right: 0px;
+    }
+    .logoRosario3{
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+      }
 }
