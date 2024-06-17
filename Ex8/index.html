@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="icon" href="images/8.png" type="image/png" />
+    <script src="./scripts/scripts.js"></script>
+    <title>Stardew Valley</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/1.png" alt="Stardew Valley" class="stardewLogo" />
+      <p>17 de junio, 2024</p>
+    </header>
+    <nav>
+      <ul class="nav-list font-size-li">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Granja</a></li>
+        <li><a href="#">Aventura</a></li>
+        <li><a href="#">Pesca</a></li>
+        <li><a href="#">Social</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </nav>
+    <div class="content-wrapper">
+      <aside class="ad ad-left">Publicidad</aside>
+      <main>
+        <section class="main-content">
+          <article>
+            <h1 id="form-title">Registro diario</h1>
+            <form id="subscription-form" class="form-container">
+              <div>
+                <label for="full-name">Nombre completo:</label>
+                <input type="text" id="full-name" name="full-name" />
+                <span class="error-message" id="full-name-error"></span>
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+                <span class="error-message" id="email-error"></span>
+              </div>
+              <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" />
+                <span class="error-message" id="password-error"></span>
+              </div>
+              <div>
+                <label for="confirm-password">Repetir contraseña:</label>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                />
+                <span class="error-message" id="confirm-password-error"></span>
+              </div>
+              <div>
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" />
+                <span class="error-message" id="age-error"></span>
+              </div>
+              <div>
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" />
+                <span class="error-message" id="phone-error"></span>
+              </div>
+              <div>
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" />
+                <span class="error-message" id="address-error"></span>
+              </div>
+              <div>
+                <label for="city">Ciudad:</label>
+                <input type="text" id="city" name="city" />
+                <span class="error-message" id="city-error"></span>
+              </div>
+              <div>
+                <label for="postal-code">Código Postal:</label>
+                <input type="text" id="postal-code" name="postal-code" />
+                <span class="error-message" id="postal-code-error"></span>
+              </div>
+              <div>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" />
+                <span class="error-message" id="dni-error"></span>
+              </div>
+              <div class="submit-button">
+                <button type="button" onclick="validateForm()">Enviar</button>
+              </div>
+            </form>
+          </article>
+        </section>
+      </main>
+      <aside class="ad ad-right">Publicidad</aside>
+    </div>
+    <footer>
+      <p>&copy; 2024 Diario de Stardew Valley</p>
+    </footer>
+  </body>
+</html>
